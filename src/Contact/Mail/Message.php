@@ -6,25 +6,15 @@ class MessageException extends \Exception {}
 
 class Message
 {
-    public $from;
-    public $to;
-    public $subject;
-    public $body;
+	public $subject;
+    public $text_body;
+    public $html_body;
 
-    public $reply_to;
-
-    public function __construct($from, $to, $subject, $body)
+    public function __construct()
 	{
-		$this->from = $from;
-		$this->to = $to;
 		$this->subject = $subject;
-		$this->body = $body;
+		$this->text_body = $text_body;
+		$this->html_body = $html_body;
 	}
-
-	public function setReplyTo($reply_to)
-	{
-		$this->reply_to = $reply_to;
-	}
-
 
 }
