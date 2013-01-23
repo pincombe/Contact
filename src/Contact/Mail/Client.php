@@ -2,7 +2,7 @@
 
 namespace Contact\Mail;
 
-use \Contact\Mail\Message;
+use \Contact\Mail;
 
 class ClientException extends \Exception {}
 
