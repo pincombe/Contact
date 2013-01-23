@@ -22,9 +22,9 @@ class Address
 	    return self::parseAddressList($this->from);
     }
 
-    public function getRecipients()
+    public function getTo()
     {
-	    return self::parseAddressList($this->recipients);
+	    return self::parseAddressList($this->to);
     }
 
     public function getReplyTo()
