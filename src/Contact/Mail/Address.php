@@ -10,7 +10,7 @@ class Address
     public $to;
     public $reply_to;
 
-    public function __construct()
+    public function __construct($from = '', $to = '', $reply_to = '')
 	{
 		$this->from = $from;
 		$this->to = $to;
