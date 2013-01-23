@@ -9,9 +9,9 @@ class ClientException extends \Exception {}
 class Client extends \Transmit\Client
 {
 
-	public function send(Mail $message)
+	public function send(Mail $mail)
 	{
-		$response = $this->_post(sprintf('/mail', json_encode($message)));
+		$response = $this->_post('/mail', json_encode($mail));
 		return json_decode($response);
 	}
 
